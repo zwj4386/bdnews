@@ -14,7 +14,7 @@ os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 class BdnewsPipeline(object):
     def process_item(self, item, spider):
         #连接数据库
-        conn=pymysql.connect(host='192.168.3.232',user='zwj',passwd='123456',db='caiji',charset='utf8',port=3306)
+        conn=pymysql.connect(host='ip',user='zwj',passwd='123456',db='db',charset='utf8',port=3306)
         cursor=conn.cursor()
 
         #在数据库中添加数据，违反唯一性约束则不插入
