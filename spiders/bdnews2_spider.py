@@ -27,7 +27,7 @@ class BaiDuNews(Spider):
     start_urls=[
         'http://news.baidu.com',
     ]
-    conn = pymysql.connect(host='192.168.3.232', user='zwj', passwd='123456', db='caiji', charset='utf8',
+    conn = pymysql.connect(host='ip', user='zwj', passwd='123456', db='test', charset='utf8',
                            port=3306)
     cursor = conn.cursor()
 
